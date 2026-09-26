@@ -1,0 +1,15 @@
+Week 5 - Deep Learning KPI Prediction
+=====================================
+
+Original dataset shape: (840, 2881)
+KPI features: 2880
+Time samples: 840
+Sequence length: 6
+
+Sequence samples: 834
+Train samples: 583
+Validation samples: 125
+Test samples: 126
+
+Prediction target:
+Next-time-step mean normalized DLPRB KPI

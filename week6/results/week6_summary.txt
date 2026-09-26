@@ -1,0 +1,44 @@
+Week 6 - 5G Network Anomaly Detection System
+============================================
+
+Dataset
+-------
+Time samples: 840
+KPI features: 2880
+Input: normalized DLPRB KPI dataset
+
+Statistical anomaly detection
+-----------------------------
+3-Sigma anomalies: 0
+IQR anomalies: 0
+
+Machine learning anomaly detection
+----------------------------------
+Isolation Forest anomalies: 26
+Isolation Forest anomaly ratio: 3.0952%
+One-Class SVM anomalies: 31
+One-Class SVM anomaly ratio: 3.6905%
+Common anomalies: 17
+Union anomalies: 40
+
+Root cause analysis
+-------------------
+Highest-ranked suspected KPI: 1_1_22
+Contribution score: 0.888662
+Normal mean: 0.257339
+Anomaly mean: 0.435785
+Correlation with anomaly: 0.211885
+
+Most anomalous time index: 82.0
+Combined anomaly score: 1.000000
+Detected by both ML models: 1
+
+Conclusion
+----------
+Traditional statistical methods based on aggregated mean KPI did not detect global anomalies. However, unsupervised machine learning methods operating on the multidimensional KPI state identified multiple abnormal time points.
+
+Isolation Forest detected 26 anomalies and One-Class SVM detected 31 anomalies. Seventeen abnormal samples were jointly identified by both models, while the union contained 40 samples.
+
+Root-cause analysis compared normal and anomalous KPI states using mean variation, standard deviation variation, correlation with anomaly labels, and a combined contribution score. The resulting KPI ranking can be used to prioritize further network troubleshooting.
+
+The root-cause ranking represents statistical association and anomaly contribution rather than strict causal proof.

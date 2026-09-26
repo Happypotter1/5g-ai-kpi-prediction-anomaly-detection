@@ -1,0 +1,13 @@
+Week 5 - Transformer KPI Prediction
+===================================
+
+Device: cpu
+Input features: 2880
+Sequence length: 6
+D_MODEL: 64
+NHEAD: 4
+NUM_LAYERS: 2
+
+MAE = 0.0072341645
+RMSE = 0.0088679200
+R2 = 0.9582782388

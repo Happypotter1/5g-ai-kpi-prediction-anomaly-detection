@@ -1,0 +1,151 @@
+{
+  "LSTM": {
+    "MAE": 0.00854139178571429,
+    "RMSE": 0.010704216484174344,
+    "R2": 0.9392105015025006,
+    "max_abs_error": 0.031048473999999993,
+    "n": 126
+  },
+  "GRU": {
+    "MAE": 0.015814516547619045,
+    "RMSE": 0.020521505800123917,
+    "R2": 0.7765721829286147,
+    "max_abs_error": 0.063358724,
+    "n": 126
+  },
+  "Transformer": {
+    "MAE": 0.007234163865079363,
+    "RMSE": 0.008867919149798028,
+    "R2": 0.9582782762797744,
+    "max_abs_error": 0.020767805,
+    "n": 126
+  },
+  "actual_series_match": true,
+  "actual_max_difference": 0.0,
+  "npz": {
+    "X_train": [
+      583,
+      6,
+      2880
+    ],
+    "y_train": [
+      583
+    ],
+    "X_val": [
+      125,
+      6,
+      2880
+    ],
+    "y_val": [
+      125
+    ],
+    "X_test": [
+      126,
+      6,
+      2880
+    ],
+    "y_test": [
+      126
+    ],
+    "time_train": [
+      583
+    ],
+    "time_val": [
+      125
+    ],
+    "time_test": [
+      126
+    ]
+  },
+  "npz_actual_match_rnn": false,
+  "npz_actual_max_difference": 7.081031788702674e-09,
+  "scripts": {
+    "compare_week5_models.py": {
+      "bytes": 5284,
+      "sha256": "d31ec5c44f0ce4c50319a4e04987fb78d73f5f5c691a86097d17066d0a68e705",
+      "syntax": "ok"
+    },
+    "prepare_sequences.py": {
+      "bytes": 4249,
+      "sha256": "60e0aded23d0bc6271b3763e75da621602a1b857dd04816d53d454ec14ad4cc8",
+      "syntax": "ok"
+    },
+    "train_rnn_models.py": {
+      "bytes": 12297,
+      "sha256": "c9f21bcd2eaa883edcb33b30ad27cbf56d07d74f57a7a7015d92e55d2bae63e7",
+      "syntax": "ok"
+    },
+    "train_transformer.py": {
+      "bytes": 8856,
+      "sha256": "8076c3a82986df1febc54a3399b2b512095ec3619677ea358852e4f7a7543a06",
+      "syntax": "ok"
+    }
+  },
+  "models": {
+    "gru_best.pt": {
+      "bytes": 2265761,
+      "sha256": "75c49379e73974078040a771e777c66ab7f6b50f555f4be20d837bf8ef506168",
+      "zip_container": true
+    },
+    "lstm_best.pt": {
+      "bytes": 3020013,
+      "sha256": "66f4e1b426fa8ee1066d04b1ca1bb81ba3b16ce6b3b9b50b5c6a9d15a29496d0",
+      "zip_container": true
+    },
+    "transformer_best.pt": {
+      "bytes": 1042503,
+      "sha256": "67aa4c89d2139c072314615d89c0bf971a3b05c324fb1226c888fb3b0ffb677e",
+      "zip_container": true
+    }
+  },
+  "figures": {
+    "01_lstm_training_loss.png": {
+      "bytes": 62565,
+      "sha256": "cda1f6bbe54bf8c2994cf3b23b8236ce050d4fed4e2ef3cad2604448ea9e95b7"
+    },
+    "02_lstm_actual_vs_predicted.png": {
+      "bytes": 205844,
+      "sha256": "3dbf4ff8d91e1c1cbdb622a5743035f1a1c6df29caccecf5d0906d5b1d750f85"
+    },
+    "03_gru_training_loss.png": {
+      "bytes": 70350,
+      "sha256": "252d6c39375e485862d213ed59a112519450baf0570fbf8bc30cbb4be8766df5"
+    },
+    "04_gru_actual_vs_predicted.png": {
+      "bytes": 206389,
+      "sha256": "610fa93fc19249996e7b065fb27bb643ac5684dd33f0288c807377caf0c34c90"
+    },
+    "05_transformer_training_loss.png": {
+      "bytes": 64695,
+      "sha256": "b0c60e4a5f9f2e552bd1babc3ff3b2ec26b4d6b6b5ad0bb7e335b6ed2e2f1471"
+    },
+    "06_transformer_actual_vs_predicted.png": {
+      "bytes": 203369,
+      "sha256": "6f0cf14bedf903c6ec701cd543936499b07dfb3e31e89b375472709e85cb315a"
+    },
+    "07_deep_learning_mae.png": {
+      "bytes": 49865,
+      "sha256": "2605d882f1c1e87895522ab903bb26854d24132616657eaf3057799e0ff21678"
+    },
+    "08_deep_learning_rmse.png": {
+      "bytes": 53826,
+      "sha256": "cac325b6565904866d6203d9c57041ed196a891cfe1155a5c7b519d4b647811d"
+    },
+    "09_deep_learning_r2.png": {
+      "bytes": 37313,
+      "sha256": "5c4bedc5a13685a1c0f179b1477ac06ab613ead977ef5884fca9377eaa81ca37"
+    },
+    "10_all_models_mae.png": {
+      "bytes": 94313,
+      "sha256": "2be4a27ba5f5ba9cf05fc10166aba3b1b65e2e0977528fea344c7762280eee0f"
+    },
+    "11_all_models_rmse.png": {
+      "bytes": 96445,
+      "sha256": "975b611ac700f5077a0366e0baed361cad10e70e763f28032d80fb4ba78aa860"
+    },
+    "12_all_models_r2.png": {
+      "bytes": 89038,
+      "sha256": "8f8a6c28a6eda6563209ff09fdd88ae685de70f83078ca92fd43d134b7cdfd25"
+    }
+  }
+}

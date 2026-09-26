@@ -1,0 +1,54 @@
+Week 5 - Deep Learning KPI Prediction Summary
+================================================
+
+Dataset:
+- 840 original time samples
+- 2880 KPI features
+- Sequence length: 6
+- Sequence samples: 834
+- Training samples: 583
+- Validation samples: 125
+- Test samples: 126
+- Prediction target: next-time-step mean normalized DLPRB KPI
+
+Deep learning models:
+      Model      MAE     RMSE       R2
+Transformer 0.007234 0.008868 0.958278
+       LSTM 0.008541 0.010704 0.939210
+        GRU 0.015815 0.020522 0.776572
+
+Best deep learning model:
+Transformer
+MAE = 0.0072341645
+RMSE = 0.0088679200
+R2 = 0.9582782388
+
+Traditional ML + Deep Learning:
+           Model      MAE     RMSE       R2
+        LightGBM 0.006212 0.007450 0.971354
+         XGBoost 0.006369 0.007668 0.969657
+     Transformer 0.007234 0.008868 0.958278
+            LSTM 0.008541 0.010704 0.939210
+             GRU 0.015815 0.020522 0.776572
+    RandomForest 0.068677 0.105242 0.887820
+    DecisionTree 0.074510 0.125013 0.841712
+LinearRegression 0.115793 0.148857 0.775574
+
+Overall best model:
+LightGBM
+MAE = 0.0062116938
+RMSE = 0.0074504143
+R2 = 0.9713537291
+
+Conclusion:
+Among the deep learning models, Transformer achieved the best
+prediction performance, followed by LSTM and GRU.
+
+However, LightGBM from Week 4 still achieved the best overall
+performance. This indicates that for the current relatively small
+KPI time-series dataset, gradient boosting methods can provide
+excellent prediction accuracy with lower model complexity.
+
+Transformer demonstrated strong sequence modeling capability and
+outperformed the recurrent neural network models, showing its
+potential for more complex or larger-scale KPI forecasting tasks.

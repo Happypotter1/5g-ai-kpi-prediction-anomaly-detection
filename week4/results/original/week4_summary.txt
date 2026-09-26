@@ -1,0 +1,53 @@
+Week 4 - Traditional Machine Learning Based KPI Prediction
+
+Dataset:
+- gotsf-ds DLPRB KPI dataset
+- 840 time samples
+- 2880 KPI beam features
+- Time-series prediction using previous time step to predict the next KPI state
+
+Models evaluated:
+1. Linear Regression
+2. Decision Tree
+3. Random Forest
+4. XGBoost
+5. LightGBM
+
+Final model performance:
+
+LightGBM
+MAE  = 0.0062116938
+RMSE = 0.0074504144
+R2   = 0.9713537291
+
+XGBoost
+MAE  = 0.0063686541
+RMSE = 0.0076678360
+R2   = 0.9696573936
+
+Random Forest
+MAE  = 0.0686765133
+RMSE = 0.1052422156
+R2   = 0.8878197229
+
+Decision Tree
+MAE  = 0.0745098055
+RMSE = 0.1250131056
+R2   = 0.8417121312
+
+Linear Regression
+MAE  = 0.1157934505
+RMSE = 0.1488565320
+R2   = 0.7755744299
+
+Best model:
+LightGBM
+
+Conclusion:
+LightGBM achieved the best overall prediction performance, with the
+lowest MAE and RMSE and the highest R2 score. XGBoost achieved very
+similar performance and significantly outperformed the traditional
+baseline models. Random Forest provided moderate prediction accuracy,
+while Decision Tree and Linear Regression showed larger prediction
+errors. The results indicate that gradient boosting models are highly
+effective for nonlinear 5G KPI time-series prediction.

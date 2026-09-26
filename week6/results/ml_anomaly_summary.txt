@@ -1,0 +1,22 @@
+Week 6 - Machine Learning Anomaly Detection
+===========================================
+
+Dataset shape: (840, 2881)
+KPI dimensions: 2880
+PCA dimensions: 20
+PCA explained variance: 29.9313%
+
+Isolation Forest
+----------------
+Anomaly count: 26
+Anomaly ratio: 3.0952%
+
+One-Class SVM
+-------------
+Anomaly count: 31
+Anomaly ratio: 3.6905%
+
+Agreement
+---------
+Common anomalies: 17
+Union anomalies: 40

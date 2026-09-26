@@ -1,0 +1,17 @@
+Week 5 - LSTM and GRU KPI Prediction
+====================================
+
+Device: cpu
+Input features: 2880
+Sequence length: 6
+Hidden size: 64
+
+LSTM
+MAE = 0.0085413912
+RMSE = 0.0107042169
+R2 = 0.9392104745
+
+GRU
+MAE = 0.0158145167
+RMSE = 0.0205215056
+R2 = 0.7765721679

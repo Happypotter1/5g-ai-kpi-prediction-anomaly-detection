@@ -1,0 +1,30 @@
+{
+  "original_shape": [
+    840,
+    2881
+  ],
+  "sequence_shape": [
+    834,
+    6,
+    2880
+  ],
+  "train": 583,
+  "validation": 125,
+  "test": 126,
+  "target_row_ranges": {
+    "train": [
+      6,
+      588
+    ],
+    "validation": [
+      589,
+      713
+    ],
+    "test": [
+      714,
+      839
+    ]
+  },
+  "target_test_variance": 0.0018848691476059895,
+  "prediction_files_recalculated": true
+}

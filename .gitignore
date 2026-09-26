@@ -5,12 +5,4 @@ __pycache__/
 *.pyo
 *.log
 week3/datasets/raw/
-week3/datasets/processed/
-week3/analysis/
-week4/results/
-week4/figures/
-week5/results/
-week5/figures/
-week6/results/
-week6/figures/
 week5/results/*.npz

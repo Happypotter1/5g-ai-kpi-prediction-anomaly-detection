@@ -1,0 +1,54 @@
+Week 6 - Root Cause Analysis
+============================
+
+Time samples: 840
+KPI features: 2880
+Union anomaly samples: 40
+Common anomaly samples: 17
+
+Root-cause analysis strategy:
+1. Compare KPI mean values between normal and anomalous samples.
+2. Compare KPI standard deviation between normal and anomalous samples.
+3. Calculate correlation between each KPI and anomaly labels.
+4. Combine the above indicators into a contribution score.
+
+Top 20 suspected root-cause KPI:
+--------------------------------
+Rank  1: 1_1_22, score=0.888662, normal_mean=0.257339, anomaly_mean=0.435785, corr=0.211885
+Rank  2: 4_0_23, score=0.879867, normal_mean=0.247589, anomaly_mean=0.421675, corr=0.209291
+Rank  3: 25_2_17, score=0.829788, normal_mean=0.236076, anomaly_mean=0.412797, corr=0.187214
+Rank  4: 13_0_22, score=0.808318, normal_mean=0.154679, anomaly_mean=0.309746, corr=0.206648
+Rank  5: 12_0_14, score=0.803490, normal_mean=0.259262, anomaly_mean=0.426311, corr=0.192179
+Rank  6: 16_2_9, score=0.798791, normal_mean=0.207145, anomaly_mean=0.352630, corr=0.191731
+Rank  7: 8_0_20, score=0.766359, normal_mean=0.345482, anomaly_mean=0.515056, corr=0.182931
+Rank  8: 15_2_12, score=0.761166, normal_mean=0.209435, anomaly_mean=0.364065, corr=0.179679
+Rank  9: 14_0_20, score=0.757993, normal_mean=0.269359, anomaly_mean=0.438893, corr=0.177273
+Rank 10: 25_1_19, score=0.755539, normal_mean=0.188553, anomaly_mean=0.337183, corr=0.197687
+Rank 11: 22_1_21, score=0.733054, normal_mean=0.158204, anomaly_mean=0.306173, corr=0.180703
+Rank 12: 23_1_29, score=0.724381, normal_mean=0.177838, anomaly_mean=0.319907, corr=0.163912
+Rank 13: 17_2_6, score=0.721675, normal_mean=0.203324, anomaly_mean=0.336040, corr=0.188307
+Rank 14: 29_0_14, score=0.718229, normal_mean=0.212810, anomaly_mean=0.361807, corr=0.178491
+Rank 15: 16_1_19, score=0.717184, normal_mean=0.147114, anomaly_mean=0.282841, corr=0.184040
+Rank 16: 22_2_13, score=0.706596, normal_mean=0.338658, anomaly_mean=0.491641, corr=0.114685
+Rank 17: 0_1_17, score=0.706236, normal_mean=0.072774, anomaly_mean=0.171067, corr=0.209183
+Rank 18: 29_0_6, score=0.702416, normal_mean=0.161393, anomaly_mean=0.287283, corr=0.190137
+Rank 19: 17_0_23, score=0.693742, normal_mean=0.125624, anomaly_mean=0.238798, corr=0.171397
+Rank 20: 9_0_14, score=0.681678, normal_mean=0.347008, anomaly_mean=0.495171, corr=0.163891
+
+Top anomalous time points:
+--------------------------
+time_index=82.0, score=1.000000, common=1
+time_index=304.0, score=0.868121, common=1
+time_index=309.0, score=0.868099, common=0
+time_index=378.0, score=0.839720, common=1
+time_index=46.0, score=0.833527, common=1
+time_index=310.0, score=0.828432, common=1
+time_index=659.0, score=0.826394, common=1
+time_index=377.0, score=0.823857, common=1
+time_index=715.0, score=0.820275, common=1
+time_index=308.0, score=0.813373, common=0
+time_index=731.0, score=0.812889, common=1
+time_index=66.0, score=0.811604, common=1
+time_index=45.0, score=0.808972, common=1
+time_index=597.0, score=0.806076, common=1
+time_index=307.0, score=0.805376, common=1

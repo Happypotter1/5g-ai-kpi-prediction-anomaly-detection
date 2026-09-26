@@ -1,0 +1,28 @@
+Week 6 - Statistical Anomaly Detection
+======================================
+
+Dataset shape: (840, 2881)
+KPI features: 2880
+Time samples: 840
+
+3-Sigma Detection
+-----------------
+Mean: 0.14054756270722987
+Std: 0.04413629162982356
+Lower bound: 0.0081386878177592
+Upper bound: 0.2729564375967005
+Anomaly count: 0
+
+IQR Detection
+-------------
+Q1: 0.09686731319676031
+Q3: 0.17427546099795077
+IQR: 0.07740814780119046
+Lower bound: -0.019244908505025374
+Upper bound: 0.29038768269973647
+Anomaly count: 0
+
+Combined
+--------
+Combined anomaly count: 0
+Combined anomaly ratio: 0.0000%
