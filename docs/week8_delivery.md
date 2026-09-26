@@ -20,4 +20,6 @@
 
 ## GitHub
 
-公开工程仓库：<https://github.com/Happypotter1/5g-ai-kpi-prediction-anomaly-detection>。按项目所有者的公开交付决定，main 分支现包含代码、文档、两份处理后的真实 DLPRB CSV、第 4–6 周实验结果和图表；远端共核对 114 个文件。原始 `DLPRB_train_0w-5w.csv` 仍未恢复，不得将处理后的 CSV 冒称原始输入。本地 `.venv` 和重复的交付压缩包不放入源码仓库。Streamlit 云端部署的入口为 `week7/app.py`；正式公网网址须在服务完成部署并通过功能检查后填写，不能以 GitHub 仓库网址代替。
+公开工程仓库：<https://github.com/Happypotter1/5g-ai-kpi-prediction-anomaly-detection>。按项目所有者的公开交付决定，main 分支现包含代码、文档、两份处理后的真实 DLPRB CSV、第 4–6 周实验结果和图表；远端共核对 114 个文件。原始 `DLPRB_train_0w-5w.csv` 仍未恢复，不得将处理后的 CSV 冒称原始输入。本地 `.venv` 和重复的交付压缩包不放入源码仓库。
+
+公开 Web 入口：<https://5g-ai-kpi-prediction-anomaly-detection-cybqywldc728xbu2uauevq.streamlit.app/>，由 Streamlit Community Cloud 从仓库 `main` 分支的 `week7/app.py` 部署。部署后已核查五个主要页面，数据浏览页切换 KPI 后图表和统计值同步更新。GitHub 仓库网址用于查阅代码、文档和数据，不能代替 Web 页面网址。

@@ -42,7 +42,7 @@
 
 ## 云端部署
 
-从 GitHub 仓库部署到 Streamlit Community Cloud 时，选择 `main` 分支和入口文件 `week7/app.py`。`week7/requirements.txt` 只安装网页所需依赖，避免在云端安装实验训练用的大型框架。云端页面使用仓库内公开的处理后数据和历史结果；本机 `localhost:8501` 与云端网址是两个不同的访问入口。
+公开网站：<https://5g-ai-kpi-prediction-anomaly-detection-cybqywldc728xbu2uauevq.streamlit.app/>。它从 GitHub 仓库的 `main` 分支、入口文件 `week7/app.py` 部署到 Streamlit Community Cloud。`week7/requirements.txt` 只安装网页所需依赖，避免在云端安装实验训练用的大型框架。云端页面使用仓库内公开的处理后真实数据和历史结果；本机 `localhost:8501` 与云端网址是两个不同的访问入口。
 
 也可分周运行：
 
