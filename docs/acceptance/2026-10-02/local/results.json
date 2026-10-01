@@ -1,0 +1,32 @@
+{
+  "startedAt": "2026-10-01T16:48:35.267Z",
+  "finishedAt": "2026-10-01T16:48:49.937Z",
+  "target": "http://127.0.0.1:58409",
+  "scope": "local",
+  "browserChannel": "msedge",
+  "browserVersion": "154.0.4258.48",
+  "passed": 4,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "home and prediction controls work in a real browser",
+      "status": "passed",
+      "durationMs": 4232
+    },
+    {
+      "name": "anomaly strategy changes count and explains statistical zero",
+      "status": "passed",
+      "durationMs": 2242
+    },
+    {
+      "name": "root-cause definitions and Top N slider render",
+      "status": "passed",
+      "durationMs": 2183
+    },
+    {
+      "name": "data browser selection and CSV download work",
+      "status": "passed",
+      "durationMs": 4080
+    }
+  ]
+}

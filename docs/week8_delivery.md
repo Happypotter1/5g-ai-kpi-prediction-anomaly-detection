@@ -10,7 +10,7 @@
 
 ## 自动化验收
 
-执行 `./.venv/Scripts/python.exe -m pytest week7/tests -q`。测试覆盖数据文件和字段、独立 Streamlit 进程启动、HTTP 健康与首页，以及预测、异常、根因、数据浏览等页面交互。当前工作区验收结果：9 passed。
+执行 `./.venv/Scripts/python.exe -m pytest week7/tests -q`。测试覆盖数据文件和字段、独立 Streamlit 进程启动、HTTP 健康与首页，以及预测、异常、根因、数据浏览等页面交互。2026-10-02 复验结果：9 passed。另新增 `week7/e2e/` 真实浏览器端到端测试：自行启动本地服务，在 Edge 中操作页面并校验下载内容；同一套测试也在公网 Streamlit 地址执行，本地与公网均为 4 passed、0 failed；详见 `docs/week8_test_matrix.md`。
 
 ## 实验边界
 
@@ -20,6 +20,6 @@
 
 ## GitHub
 
-公开工程仓库：<https://github.com/Happypotter1/5g-ai-kpi-prediction-anomaly-detection>。按项目所有者的公开交付决定，main 分支现包含代码、文档、两份处理后的真实 DLPRB CSV、第 4–6 周实验结果和图表；远端共核对 114 个文件。原始 `DLPRB_train_0w-5w.csv` 仍未恢复，不得将处理后的 CSV 冒称原始输入。本地 `.venv` 和重复的交付压缩包不放入源码仓库。
+公开工程仓库：<https://github.com/Happypotter1/5g-ai-kpi-prediction-anomaly-detection>。按项目所有者的公开交付决定，main 分支现包含代码、文档、两份处理后的真实 DLPRB CSV、第 4–6 周实验结果和图表；首次发布时核对 114 个文件，后续补入真实浏览器测试、最新报告与验收证据。原始 `DLPRB_train_0w-5w.csv` 仍未恢复，不得将处理后的 CSV 冒称原始输入。本地 `.venv` 和重复的交付压缩包不放入源码仓库。
 
-公开 Web 入口：<https://5g-ai-kpi-prediction-anomaly-detection-cybqywldc728xbu2uauevq.streamlit.app/>，由 Streamlit Community Cloud 从仓库 `main` 分支的 `week7/app.py` 部署。部署后已核查五个主要页面，数据浏览页切换 KPI 后图表和统计值同步更新。GitHub 仓库网址用于查阅代码、文档和数据，不能代替 Web 页面网址。
+公开 Web 入口：<https://5g-ai-kpi-prediction-anomaly-detection-cybqywldc728xbu2uauevq.streamlit.app/>，由 Streamlit Community Cloud 从仓库 `main` 分支的 `week7/app.py` 部署。2026-10-02 已完成公网真实浏览器自动化验收：五个主要页面、异常策略、根因 Top N、KPI 筛选和两类 CSV 下载内容检查均通过。验收记录和截图位于 docs/acceptance/2026-10-02/cloud。GitHub 仓库网址用于查阅代码、文档和数据，不能代替 Web 页面网址。

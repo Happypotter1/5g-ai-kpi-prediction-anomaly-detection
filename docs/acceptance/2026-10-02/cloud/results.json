@@ -1,0 +1,32 @@
+{
+  "startedAt": "2026-10-01T16:48:34.958Z",
+  "finishedAt": "2026-10-01T16:49:25.432Z",
+  "target": "https://5g-ai-kpi-prediction-anomaly-detection-cybqywldc728xbu2uauevq.streamlit.app",
+  "scope": "public-cloud",
+  "browserChannel": "msedge",
+  "browserVersion": "154.0.4258.48",
+  "passed": 4,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "home and prediction controls work in a real browser",
+      "status": "passed",
+      "durationMs": 10769
+    },
+    {
+      "name": "anomaly strategy changes count and explains statistical zero",
+      "status": "passed",
+      "durationMs": 9728
+    },
+    {
+      "name": "root-cause definitions and Top N slider render",
+      "status": "passed",
+      "durationMs": 10302
+    },
+    {
+      "name": "data browser selection and CSV download work",
+      "status": "passed",
+      "durationMs": 11036
+    }
+  ]
+}
