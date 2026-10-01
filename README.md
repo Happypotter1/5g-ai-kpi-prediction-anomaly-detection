@@ -54,4 +54,4 @@
 .\.venv\Scripts\python.exe -m pytest week7\tests -q
 ```
 
-测试覆盖数据读取、页面交互与服务启动。云端部署使用 `week7/app.py` 作为入口、`week7/requirements.txt` 作为网页依赖清单。公开站点与本地 `127.0.0.1:8501` 是两个独立访问入口；详见 [Week 7 使用说明](week7/README.md) 和 [Week 8 交付说明](docs/week8_delivery.md)。
+测试覆盖数据读取、页面交互与服务启动。真实浏览器端到端测试位于 `week7/e2e/`：支持自动启动本地服务，也支持指定公网 BASE_URL；由 Playwright 操作页面并核对下载文件；运行方法见 [Week 7 使用说明](week7/README.md)，结果见 [Week 8 测试矩阵](docs/week8_test_matrix.md)。2026-10-02 复验：Python 9/9、本地 Edge 4/4、公网 Edge 4/4 通过，截图、逐项记录与下载证据见测试矩阵。云端部署使用 `week7/app.py` 作为入口、`week7/requirements.txt` 作为网页依赖清单。公开站点与本地 `127.0.0.1:8501` 是两个独立访问入口。

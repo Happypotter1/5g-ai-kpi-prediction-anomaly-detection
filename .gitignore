@@ -4,5 +4,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.log
+node_modules/
 week3/datasets/raw/
 week5/results/*.npz
